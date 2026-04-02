@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analyzer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .container {
+            width: 60%;
+            margin: 60px auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 75%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: none;
+            background: #ff7a18;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff3d00;
+        }
+
+        .result {
+            margin-top: 25px;
+            font-size: 1.4rem;
+        }
+
+        .positive {
+            color: #00ffae;
+            font-weight: bold;
+        }
+
+        .negative {
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+
+        .posts {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .post-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🤖 Sentiment Analyzer</h1>
+        <p>Analyze emotions from social media text instantly</p>
+
+        <form method="POST">
+            <input type="text" name="text" placeholder="Type your text here..." required>
+            <button type="submit">Analyze</button>
+        </form>
+
+        {% if result %}
+            <div class="result">
+                "{{ user_input }}" → 
+                <span class="{{ result }}">{{ result | upper }}</span>
+            </div>
+        {% endif %}
+
+        <div class="posts">
+            <h3>📢 Sample Analysis</h3>
+            {% for post, sentiment in posts %}
+                <div class="post-item">
+                    {{ post }} → 
+                    <span class="{{ sentiment }}">{{ sentiment }}</span>
+                </div>
+            {% endfor %}
+        </div>
+
+        <footer>
+            Built with ❤️ using Machine Learning
+        </footer>
+    </div>
+
+</body>
+</html>
