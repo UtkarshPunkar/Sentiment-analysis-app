@@ -3,7 +3,7 @@
 
 ---
 
-## 📖 Overview
+## 📖 Overview:
 
 This project is developed as part of the **Post Lab work for Information Retrieval (IR) Practical**.  
 It demonstrates how textual data (simulating social media posts) can be processed and analyzed to determine user sentiment using Machine Learning techniques.
@@ -12,7 +12,7 @@ The system follows an **Information Retrieval (IR) pipeline**, including preproc
 
 ---
 
-## 🎯 Objective
+## 🎯 Objective:
 
 - To acquire and preprocess text data  
 - To extract meaningful features using TF-IDF  
@@ -22,7 +22,7 @@ The system follows an **Information Retrieval (IR) pipeline**, including preproc
 
 ---
 
-## 🚀 Features
+## 🚀 Features:
 
 - 🔍 Text preprocessing (lowercasing, cleaning, stopword removal)
 - 🧠 Machine Learning model (TF-IDF + Logistic Regression)
