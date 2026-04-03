@@ -33,7 +33,7 @@ The system follows an **Information Retrieval (IR) pipeline**, including preproc
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack:
 
 | Category        | Technology Used        |
 |----------------|----------------------|
@@ -45,13 +45,13 @@ The system follows an **Information Retrieval (IR) pipeline**, including preproc
 
 ---
 
-## ⚙️ System Architecture
+## ⚙️ System Architecture:
 
 User Input → Preprocessing → TF-IDF Vectorization → ML Model → Prediction → Display Result
 
 ---
 
-## 🔄 Workflow
+## 🔄 Workflow:
 
 1. User enters text (simulating social media post)  
 2. Text is preprocessed:
@@ -64,7 +64,7 @@ User Input → Preprocessing → TF-IDF Vectorization → ML Model → Predictio
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure:
 
 sentiment_app/
 │
@@ -76,7 +76,7 @@ sentiment_app/
 
 ---
 
-## ▶️ How to Run the Project
+## ▶️ How to Run the Project:
 
 1. Install dependencies (pip install flask pandas scikit-learn nltk)
 2. Run the application
