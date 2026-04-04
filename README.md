@@ -1,5 +1,5 @@
 # 🤖 Sentiment Analysis Web App  
-### 📌 Post Lab – Information Retrieval (IR) Practical
+### 📌 Post Lab – Information Retrieval (IR) Practical.
 
 ---
 
