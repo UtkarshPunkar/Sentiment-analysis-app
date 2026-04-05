@@ -47,7 +47,7 @@ The system follows an **Information Retrieval (IR) pipeline**, including preproc
 
 ## ⚙️ System Architecture:
 
-User Input → Preprocessing → TF-IDF Vectorization → ML Model → Prediction → Display Result
+User Input → Preprocessing → TF-IDF Vectorization → ML Model → Prediction → Display Result.
 
 ---
 
