@@ -38,5 +38,4 @@ def predict_sentiment(text):
     text_clean = preprocess(text)
     vec = vectorizer.transform([text_clean])
     return model.predict(vec)[0]
-    
     #model.py file
