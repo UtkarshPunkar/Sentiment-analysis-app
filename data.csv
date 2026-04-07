@@ -1,4 +1,4 @@
-#this is data set for training
+#this is data set for training the model 
 text,label
 I love this product,positive
 This is amazing,positive
